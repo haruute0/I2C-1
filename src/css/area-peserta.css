@@ -1,0 +1,31 @@
+/*  
+    area-peserta.css
+    Stylesheet file untuk halaman area peserta   
+    SI IFEST#7 2019
+*/
+
+/* box */
+.box {
+    margin: 20px auto;
+}
+
+label {
+    margin: 10px auto;
+}
+
+.button {
+    margin: 15px auto 0px;
+}
+
+.signup-button {
+    width: 100px;
+    background-color: #245ec6;
+    transition: 0.3s;
+    color: white !important;
+    margin: 20px auto auto;
+}
+
+.signup-button:hover {
+    background-color: #2b2b2b;
+    transition: 0.3s;
+}

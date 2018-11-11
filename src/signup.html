@@ -1,0 +1,378 @@
+<!--
+    signup.html
+    Halaman Pendaftaran Peserta I2C 2019
+    SI IFEST#7 2019
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Site Information -->
+    <title>Area Peserta | I2C 2019</title>
+    <meta name="description" content="Area peserta kompetisi ide aplikasi I2C 2019 untuk siswa/i SMA seluruh Indonesia.">
+
+    <!-- CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/area-peserta.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+
+<body>
+    <section class="section">
+
+        <div class="container">
+            <h1 class="title">Pendaftaran I2C 2019</h1>
+            <p>Selamat datang di halaman pendaftaran I2C</p>
+        </div>
+
+        <div class="container">
+
+            <h3 class="subtitle is-3">Informasi Kelompok</h3>
+            
+            <form name="registrasi-kelompok" method="POST">
+
+            <div class="informasi--kelompok box">
+
+                <!-- Nama Kelompok -->
+                <div class="field">
+                    <label class="label">Nama Kelompok</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="kelompok Gayeng 888">
+                    </div>
+                </div>
+
+                <!-- Asal Sekolah -->
+                <div class="field">
+                    <label class="label">Asal Sekolah</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Sekolah ku :))">
+                    </div>
+                </div>
+
+                <!-- Jumlah Anggota Kelompok -->
+                <label class="label">Jumlah Anggota Kelompok</label>
+                <div class="select">
+                    <select>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3 class="subtitle is-3">Informasi Peserta</h3>
+
+            <div class="informasi-peserta">
+
+                <!-- Ketua Kelompok -->
+                <div class="box">
+                    <div class="anggota-kelompok">
+
+                        <!-- Nama -->
+                        <h6 class="title 6">Ketua Kelompok</h6>
+                        <div class="field">
+                            <label class="label">Nama Lengkap</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="080XXXXXX">
+                            </div>
+                        </div>
+
+                         <!-- Nomor Induk -->
+                        <div class="field">
+                            <label class="label">Nomor Induk</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Line Line">
+                            </div>
+                        </div>
+
+                         <!-- Nomor Telepon -->
+                        <div class="field">
+                            <label class="label">Nomor Telepon</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="080XXXXXX">
+                            </div>
+                        </div>
+
+                         <!-- ID Line -->
+                        <div class="field">
+                            <label class="label">ID Line Ketua Kelompok</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Line Line">
+                            </div>
+                        </div>
+
+                         <!-- Email -->
+                        <div class="field">
+                            <label class="label">Email Ketua Kelompok</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="ketua@kelompok">
+                                <p>Email digunakan untuk login ke area peserta dan menerima informasi seputar I2C 2019.</p>
+                            </div>
+                        </div>
+
+                         <!-- Password -->
+                        <div class="field">
+                                <label class="label">Password</label>
+                                <div class="control">
+                                    <input class="input" type="password">
+                                </div>
+                                <p>Password digunakan untuk login ke area peserta.</p>
+                        </div>
+
+                        <!-- Alegi/Vege -->
+                        <div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Vegetarian? Centang jika anda seorang vegetarian.
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Alergi? Centang jika anda memiliki alergi.
+                                </label>
+                            </div>
+                        </div>
+
+                         <!-- Field Alergi -->
+                        <div class="field">
+                            <label class="label">Alergi terhadap?</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Anggota Kelompok 1 -->
+                <div class="box">
+                    <div class="anggota-kelompok">
+
+                        <!-- Nama -->
+                        <h6 class="title 6">Anggota 1</h6>
+                        <div class="field">
+                            <label class="label">Nama Lengkap</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="080XXXXXX">
+                            </div>
+                        </div>
+
+                        <!-- Nomor Induk -->
+                        <div class="field">
+                            <label class="label">Nomor Induk</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Line Line">
+                            </div>
+                        </div>
+
+                        <!-- Alegi/Vege -->
+                        <div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Vegetarian? Centang jika anda seorang vegetarian.
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Alergi? Centang jika anda memiliki alergi.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Field Alergi -->
+                        <div class="field">
+                            <label class="label">Alergi terhadap?</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- Anggota Kelompok 2 -->
+                <div class="box">
+                        <div class="anggota-kelompok">
+    
+                            <!-- Nama -->
+                            <h6 class="title 6">Anggota 1</h6>
+                            <div class="field">
+                                <label class="label">Nama Lengkap</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="080XXXXXX">
+                                </div>
+                            </div>
+    
+                            <!-- Nomor Induk -->
+                            <div class="field">
+                                <label class="label">Nomor Induk</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Line Line">
+                                </div>
+                            </div>
+    
+                            <!-- Alegi/Vege -->
+                            <div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Vegetarian? Centang jika anda seorang vegetarian.
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Alergi? Centang jika anda memiliki alergi.
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <!-- Field Alergi -->
+                            <div class="field">
+                                <label class="label">Alergi terhadap?</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="">
+                                </div>
+                            </div> 
+                        </div>
+                </div>
+
+                <!-- Anggota Kelompok 3 -->
+                <div class="box">
+                        <div class="anggota-kelompok">
+    
+                            <!-- Nama -->
+                            <h6 class="title 6">Anggota 1</h6>
+                            <div class="field">
+                                <label class="label">Nama Lengkap</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="080XXXXXX">
+                                </div>
+                            </div>
+    
+                            <!-- Nomor Induk -->
+                            <div class="field">
+                                <label class="label">Nomor Induk</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Line Line">
+                                </div>
+                            </div>
+    
+                            <!-- Alegi/Vege -->
+                            <div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Vegetarian? Centang jika anda seorang vegetarian.
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Alergi? Centang jika anda memiliki alergi.
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <!-- Field Alergi -->
+                            <div class="field">
+                                <label class="label">Alergi terhadap?</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="">
+                                </div>
+                            </div> 
+                        </div>
+                </div>
+
+                <!-- Anggota Kelompok 4 -->
+                <div class="box">
+                        <div class="anggota-kelompok">
+    
+                            <!-- Nama -->
+                            <h6 class="title 6">Anggota 1</h6>
+                            <div class="field">
+                                <label class="label">Nama Lengkap</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="080XXXXXX">
+                                </div>
+                            </div>
+    
+                            <!-- Nomor Induk -->
+                            <div class="field">
+                                <label class="label">Nomor Induk</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Line Line">
+                                </div>
+                            </div>
+    
+                            <!-- Alegi/Vege -->
+                            <div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Vegetarian? Centang jika anda seorang vegetarian.
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Alergi? Centang jika anda memiliki alergi.
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <!-- Field Alergi -->
+                            <div class="field">
+                                <label class="label">Alergi terhadap?</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="">
+                                </div>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+
+            <p>Pastikan data yang diinput sudah benar.</p>
+
+            <div class="form-controls">
+
+                <div class="box">
+                    <!-- Checkbox Ketentuan Required -->
+                    <div>
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            Saya telah membaca <a href="/#ketentuan">ketentuan I2C 2019.</a>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <input class="button signup-button" type="submit">
+                    </div>
+                </div>
+            </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>

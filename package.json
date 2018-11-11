@@ -1,0 +1,15 @@
+{
+  "name": "I2C",
+  "version": "1.0.0",
+  "description": "Website I2C 2019",
+  "main": "index.js",
+  "repository": "git@github.com:alishaileen/I2C.git",
+  "author": "SI IFEST#7",
+  "private": true,
+  "scripts": {
+    "serve": "browser-sync start --server 'src' --files 'src'"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.3"
+  }
+}

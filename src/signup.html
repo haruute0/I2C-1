@@ -32,16 +32,23 @@
 </head>
 
 <body>
+
     <section class="section">
 
-        <div class="container">
+        <div class="floating has-text-centered">
+            <a class="button back-button" href='/'><i class="fas fa-chevron-left"></i>&nbsp; Kembali</a>
+        </div>
+
+        <div class="container has-text-centered signup-title">
             <h1 class="title">Pendaftaran I2C 2019</h1>
             <p>Selamat datang di halaman pendaftaran I2C</p>
         </div>
 
         <div class="container">
 
+            <div class="form-pendaftaran">
             <h3 class="subtitle is-3">Informasi Kelompok</h3>
+            <p>Silahkan isi form dibawah ini dengan lengkap dan benar.</p>
             
             <form name="registrasi-kelompok" method="POST">
 
@@ -53,6 +60,7 @@
                     <div class="control">
                         <input class="input" type="text" placeholder="kelompok Gayeng 888">
                     </div>
+                    <p>Apabila individu, tuliskan nama panggilan peserta</p>
                 </div>
 
                 <!-- Asal Sekolah -->
@@ -63,15 +71,71 @@
                     </div>
                 </div>
 
+                <!-- Alamat Sekolah -->
+                <div class="field">
+                    <label class="label">Alamat Sekolah</label>
+                    <div class="control">
+                        <textarea class="textarea" type="textarea" placeholder="Sekolah ku :))"></textarea>
+                    </div>
+                </div>
+
+                <!-- Nomor Telepon -->
+                <div class="field">
+                    <label class="label">Nomor Telepon Sekolah</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="080XXXXXX">
+                    </div>
+                </div>
+
                 <!-- Jumlah Anggota Kelompok -->
                 <label class="label">Jumlah Anggota Kelompok</label>
                 <div class="select">
                     <select>
+                        <option>1</option>
+                        <option>2</option>
                         <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
                     </select>
                 </div>
+
+            </div>
+
+            <h3 class="subtitle is-3">Informasi Pembimbing</h3>
+
+            <div class="box">
+
+            <!-- Alamat Sekolah -->
+            <div class="field">
+                <label class="label">Nama Guru Pembimbing</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Sekolah ku :))">
+                </div>
+            </div>
+
+            <!-- Nomor Telepon -->
+            <div class="field">
+                <label class="label">Nomor Telepon</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="080XXXXXX">
+                </div>
+            </div>
+
+                <!-- ID Line -->
+            <div class="field">
+                <label class="label">ID Line Pembimbing</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Line Line">
+                </div>
+            </div>
+
+                <!-- Email -->
+            <div class="field">
+                <label class="label">Email Pembimbing</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="ketua@kelompok">
+                    <p>Email digunakan untuk keperluan penyampaian informasi seputar I2C 2019.</p>
+                </div>
+            </div>
+
             </div>
 
             <h3 class="subtitle is-3">Informasi Peserta</h3>
@@ -96,6 +160,18 @@
                             <label class="label">Nomor Induk</label>
                             <div class="control">
                                 <input class="input" type="text" placeholder="Line Line">
+                            </div>
+                        </div>
+
+                        <!-- Jenis Kelamin -->
+                        <div class="field">
+                            <label class="label">Jenis Kelamin</label>
+                            <div class="select">
+                                <select>
+                                    <option>Silahkan Pilih</option>
+                                    <option>Laki-Laki</option>
+                                    <option>Perempuan</option>
+                                </select>
                             </div>
                         </div>
 
@@ -212,7 +288,7 @@
                         <div class="anggota-kelompok">
     
                             <!-- Nama -->
-                            <h6 class="title 6">Anggota 1</h6>
+                            <h6 class="title 6">Anggota 2</h6>
                             <div class="field">
                                 <label class="label">Nama Lengkap</label>
                                 <div class="control">
@@ -254,111 +330,53 @@
                         </div>
                 </div>
 
-                <!-- Anggota Kelompok 3 -->
-                <div class="box">
-                        <div class="anggota-kelompok">
-    
-                            <!-- Nama -->
-                            <h6 class="title 6">Anggota 1</h6>
-                            <div class="field">
-                                <label class="label">Nama Lengkap</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="080XXXXXX">
-                                </div>
-                            </div>
-    
-                            <!-- Nomor Induk -->
-                            <div class="field">
-                                <label class="label">Nomor Induk</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Line Line">
-                                </div>
-                            </div>
-    
-                            <!-- Alegi/Vege -->
-                            <div>
-                                <div>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Vegetarian? Centang jika anda seorang vegetarian.
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Alergi? Centang jika anda memiliki alergi.
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <!-- Field Alergi -->
-                            <div class="field">
-                                <label class="label">Alergi terhadap?</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="">
-                                </div>
-                            </div> 
-                        </div>
-                </div>
+            </div>
 
-                <!-- Anggota Kelompok 4 -->
+            <div class="lampiran-section">
+
                 <div class="box">
-                        <div class="anggota-kelompok">
-    
-                            <!-- Nama -->
-                            <h6 class="title 6">Anggota 1</h6>
-                            <div class="field">
-                                <label class="label">Nama Lengkap</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="080XXXXXX">
-                                </div>
-                            </div>
-    
-                            <!-- Nomor Induk -->
-                            <div class="field">
-                                <label class="label">Nomor Induk</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Line Line">
-                                </div>
-                            </div>
-    
-                            <!-- Alegi/Vege -->
-                            <div>
-                                <div>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Vegetarian? Centang jika anda seorang vegetarian.
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Alergi? Centang jika anda memiliki alergi.
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <!-- Field Alergi -->
-                            <div class="field">
-                                <label class="label">Alergi terhadap?</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="">
-                                </div>
-                            </div> 
-                        </div>
+                    <p><strong id="ketentuan">Uploader lampiran:</strong></p>
+                    <ul>
+                        <li><p><i class="fas fa-check-circle"></i> Scan Surat Persetujuan dari Sekolah</p></li>
+                        <li><p><i class="fas fa-check-circle"></i> Scan Kartu Pelajar Masing-Masing Pendaftar</p></li>
+                    </ul>
+                    <div class="file has-name uploader">
+                        <label class="file-label">
+                            <input class="file-input" id="file" type="file" name="upload-proposal" required>
+                            <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                            </span>
+                            <span class="file-name" id="filename">
+                                No File Chosen
+                            </span>
+                        </label>
+                    </div>
+                    <p><center>Ukuran maksimum: 20 MB, semua file dikirim dalam 1 archive berformat zip</center></p>
                 </div>
             </div>
 
-            <p>Pastikan data yang diinput sudah benar.</p>
+            <div class="has-text-centered">
+                <p><strong class="perhatian">Perhatian!</strong></p>
+                <p>Pastikan data yang diinput sudah benar.</p>
+            </div>
 
             <div class="form-controls">
 
                 <div class="box">
+                    <p><strong id="ketentuan">Ketentuan umum:</strong></p>
+                    <div class="">
+                        <object class="box-ketentuan" data="ketentuan.txt"></object>
+                    </div>
                     <!-- Checkbox Ketentuan Required -->
                     <div>
                         <label class="checkbox">
                             <input type="checkbox" required>
-                            Saya telah membaca <a href="/#ketentuan">ketentuan I2C 2019.</a>
+                            Saya telah membaca ketentuan I2C 2019.
                         </label>
                     </div>
 
@@ -370,6 +388,8 @@
             </div>
 
             </form>
+
+            </div>
 
         </div>
 

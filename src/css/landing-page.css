@@ -3,3 +3,71 @@
     Stylesheet file untuk landing page
     SI IFEST#7 2019
 */
+
+body{
+    background-color: rgb(22, 22, 22) !important;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+}
+
+.hero-logo-img {
+    max-height: 75px;
+}
+
+.hero-title {
+    font-size: 22pt;
+    font-weight: bold;
+    color: #afb1b3;
+    margin: 20px;
+}
+
+.hero-title-big {
+    font-size: 80pt;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px auto;
+    line-height: 80px;
+}
+
+.hero-desc {
+    font-size: 15pt;
+}
+
+.hero-title-desc {
+    color: rgb(224, 146, 0);
+    font-size: 30pt;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+/* About section */
+.about--title {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #001f38f8;
+    min-height: 100vh;
+    color: #ddf3fd !important;
+    vertical-align: middle;
+}
+
+.about--image {
+    max-height: 250px;
+    margin: 20px auto;
+}
+
+.about--description {
+    font-size: 1.5em !important;
+}
+
+/* ketentuan */
+.ketentuan {
+    background-color: whitesmoke;
+}

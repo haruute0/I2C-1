@@ -4,8 +4,12 @@
     SI IFEST#7 2019
 */
 
+/* Import */
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans|Oswald:700');
+
 body{
     background-color: rgb(22, 22, 22) !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Hero Section */
@@ -29,19 +33,22 @@ body{
     font-weight: bold;
     color: #fff;
     margin: 20px auto;
-    line-height: 80px;
+    line-height: 100px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .hero-desc {
     font-size: 15pt;
+    color: #afb1b3;
 }
 
 .hero-title-desc {
     color: rgb(224, 146, 0);
     font-size: 30pt;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 50px;
     margin-bottom: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* About section */
@@ -70,4 +77,35 @@ body{
 /* ketentuan */
 .ketentuan {
     background-color: whitesmoke;
+}
+
+/* Banner SignUp */
+.banner-signup {
+    background-color: black;
+    min-height: 300px;
+    clear: both;
+}
+
+.banner-signup-title {
+    color: white;
+    font-size: 30pt;
+}
+
+.banner-signup-subtitle {
+    color: rgb(0, 189, 179);
+    font-size: 1.5em;
+}
+
+.button-daftar {
+    border: none;
+    font-size: 20pt !important;
+    background-color: #245ec6;
+    transition: 0.3s;
+    color: white !important;
+    margin: 15px auto;
+}
+
+.button-daftar:hover {
+    background-color: #2b2b2b;
+    transition: 0.3s;
 }

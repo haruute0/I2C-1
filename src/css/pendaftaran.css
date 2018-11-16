@@ -1,8 +1,10 @@
 /*  
-    signup.css
+    pendaftaran.css
     Stylesheet file untuk halaman pendaftaran I2C 2019  
     SI IFEST#7 2019
 */
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans|Oswald:700');
 
 /* Title */
 .signup-title{
@@ -84,4 +86,23 @@ label {
 /* uploader */
 .uploader {
     margin: 20px auto auto;
+}
+
+/* hero-title-big */
+.hero-title-big {
+    font-size: 40pt;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+    margin: 20px auto;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero-logo-img {
+    max-height: 75px;
+}
+
+.hero-desc {
+    font-size: 15pt;
+    color: #232930;
 }

@@ -1,5 +1,5 @@
 <!--
-    signup.html
+    pendaftaran.html
     Halaman Pendaftaran Peserta I2C 2019
     SI IFEST#7 2019
 -->
@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/pendaftaran.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
@@ -40,8 +40,11 @@
         </div>
 
         <div class="container has-text-centered signup-title">
-            <h1 class="title">Pendaftaran I2C 2019</h1>
-            <p>Selamat datang di halaman pendaftaran I2C</p>
+            <div class="hero-logo">
+                <img class="hero-logo-img" src="/images/logo-i2c.png">
+            </div>
+            <h1 class="title hero-title-big">Pendaftaran I2C 2019</h1>
+            <p class="hero-desc">Selamat datang di halaman pendaftaran I2C</p>
         </div>
 
         <div class="container">
@@ -58,7 +61,7 @@
                 <div class="field">
                     <label class="label">Nama Kelompok</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="kelompok Gayeng 888">
+                        <input class="input" type="text" placeholder="Nama Kelompok">
                     </div>
                     <p>Apabila individu, tuliskan nama panggilan peserta</p>
                 </div>
@@ -67,7 +70,7 @@
                 <div class="field">
                     <label class="label">Asal Sekolah</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Sekolah ku :))">
+                        <input class="input" type="text" placeholder="Asal Sekolah">
                     </div>
                 </div>
 
@@ -75,7 +78,7 @@
                 <div class="field">
                     <label class="label">Alamat Sekolah</label>
                     <div class="control">
-                        <textarea class="textarea" type="textarea" placeholder="Sekolah ku :))"></textarea>
+                        <textarea class="textarea" type="textarea" placeholder="Alamat Sekolah"></textarea>
                     </div>
                 </div>
 
@@ -83,18 +86,8 @@
                 <div class="field">
                     <label class="label">Nomor Telepon Sekolah</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="080XXXXXX">
+                        <input class="input" type="text" placeholder="Nomor Telepon Sekolah">
                     </div>
-                </div>
-
-                <!-- Jumlah Anggota Kelompok -->
-                <label class="label">Jumlah Anggota Kelompok</label>
-                <div class="select">
-                    <select>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
                 </div>
 
             </div>
@@ -107,7 +100,7 @@
             <div class="field">
                 <label class="label">Nama Guru Pembimbing</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Sekolah ku :))">
+                    <input class="input" type="text" placeholder="Nama Guru Pembimbing">
                 </div>
             </div>
 
@@ -115,7 +108,7 @@
             <div class="field">
                 <label class="label">Nomor Telepon</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="080XXXXXX">
+                    <input class="input" type="text" placeholder="Nomor Telepon">
                 </div>
             </div>
 
@@ -123,7 +116,7 @@
             <div class="field">
                 <label class="label">ID Line Pembimbing</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Line Line">
+                    <input class="input" type="text" placeholder="ID Line Pembimbing">
                 </div>
             </div>
 
@@ -131,7 +124,7 @@
             <div class="field">
                 <label class="label">Email Pembimbing</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="ketua@kelompok">
+                    <input class="input" type="text" placeholder="Email Pembimbing">
                     <p>Email digunakan untuk keperluan penyampaian informasi seputar I2C 2019.</p>
                 </div>
             </div>
@@ -151,15 +144,15 @@
                         <div class="field">
                             <label class="label">Nama Lengkap</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="080XXXXXX">
+                                <input class="input" type="text" placeholder="Nama Lengkap">
                             </div>
                         </div>
 
                          <!-- Nomor Induk -->
                         <div class="field">
-                            <label class="label">Nomor Induk</label>
+                            <label class="label">Nomor Induk Sekolah</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Line Line">
+                                <input class="input" type="text" placeholder="Nomor Induk Sekolah">
                             </div>
                         </div>
 
@@ -179,7 +172,7 @@
                         <div class="field">
                             <label class="label">Nomor Telepon</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="080XXXXXX">
+                                <input class="input" type="text" placeholder="Nomor Telepon">
                             </div>
                         </div>
 
@@ -187,7 +180,7 @@
                         <div class="field">
                             <label class="label">ID Line Ketua Kelompok</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Line Line">
+                                <input class="input" type="text" placeholder="ID Line Ketua Kelompok">
                             </div>
                         </div>
 
@@ -195,7 +188,7 @@
                         <div class="field">
                             <label class="label">Email Ketua Kelompok</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="ketua@kelompok">
+                                <input class="input" type="text" placeholder="Email Ketua Kelompok">
                                 <p>Email digunakan untuk login ke area peserta dan menerima informasi seputar I2C 2019.</p>
                             </div>
                         </div>
@@ -206,7 +199,7 @@
                                 <div class="control">
                                     <input class="input" type="password">
                                 </div>
-                                <p>Password digunakan untuk login ke area peserta.</p>
+                                <p>Password digunakan untuk login ke area peserta. Harap ingat password anda! Lupa password bukan tanggung jawab panitia.</p>
                         </div>
 
                         <!-- Alegi/Vege -->
@@ -227,9 +220,9 @@
 
                          <!-- Field Alergi -->
                         <div class="field">
-                            <label class="label">Alergi terhadap?</label>
+                            <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="">
+                                <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
                             </div>
                         </div>
                         
@@ -245,15 +238,27 @@
                         <div class="field">
                             <label class="label">Nama Lengkap</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="080XXXXXX">
+                                <input class="input" type="text" placeholder="Nama Lengkap">
                             </div>
                         </div>
 
                         <!-- Nomor Induk -->
                         <div class="field">
-                            <label class="label">Nomor Induk</label>
+                            <label class="label">Nomor Induk Sekolah</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Line Line">
+                                <input class="input" type="text" placeholder="Nomor Induk Sekolah">
+                            </div>
+                        </div>
+
+                        <!-- Jenis Kelamin -->
+                        <div class="field">
+                            <label class="label">Jenis Kelamin</label>
+                            <div class="select">
+                                <select>
+                                    <option>Silahkan Pilih</option>
+                                    <option>Laki-Laki</option>
+                                    <option>Perempuan</option>
+                                </select>
                             </div>
                         </div>
 
@@ -275,9 +280,9 @@
 
                         <!-- Field Alergi -->
                         <div class="field">
-                            <label class="label">Alergi terhadap?</label>
+                            <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="">
+                                <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
                             </div>
                         </div> 
                     </div>
@@ -292,15 +297,27 @@
                             <div class="field">
                                 <label class="label">Nama Lengkap</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="080XXXXXX">
+                                    <input class="input" type="text" placeholder="Nama Lengkap">
                                 </div>
                             </div>
     
                             <!-- Nomor Induk -->
                             <div class="field">
-                                <label class="label">Nomor Induk</label>
+                                <label class="label">Nomor Induk Sekolah</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Line Line">
+                                    <input class="input" type="text" placeholder="Nomor Induk Sekolah">
+                                </div>
+                            </div>
+
+                            <!-- Jenis Kelamin -->
+                            <div class="field">
+                                <label class="label">Jenis Kelamin</label>
+                                <div class="select">
+                                    <select>
+                                        <option>Silahkan Pilih</option>
+                                        <option>Laki-Laki</option>
+                                        <option>Perempuan</option>
+                                    </select>
                                 </div>
                             </div>
     
@@ -322,9 +339,9 @@
     
                             <!-- Field Alergi -->
                             <div class="field">
-                                <label class="label">Alergi terhadap?</label>
+                                <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="">
+                                    <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
                                 </div>
                             </div> 
                         </div>
@@ -363,6 +380,7 @@
             <div class="has-text-centered">
                 <p><strong class="perhatian">Perhatian!</strong></p>
                 <p>Pastikan data yang diinput sudah benar.</p>
+                <p>Harap ingat password anda! Lupa password bukan tanggung jawab panitia.</p>
             </div>
 
             <div class="form-controls">

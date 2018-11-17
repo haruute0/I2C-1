@@ -135,4 +135,14 @@ body{
 }
 .footer {
     padding-bottom: 10vh;
+    color: whitesmoke !important;
+}
+
+.footer-text {
+    color: white !important;
+}
+
+/* footer-image */
+.footer-image {
+    max-width: 200px !important;
 }

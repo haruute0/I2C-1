@@ -55,13 +55,15 @@ body{
 .about--title {
     font-size: 3em;
     line-height: 1.2em;
+    text-align: center;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .about {
     background-color: #001f38f8;
     min-height: 100vh;
-    color: #ddf3fd !important;
+    color: #99e2ff !important;
     vertical-align: middle;
 }
 
@@ -72,6 +74,8 @@ body{
 
 .about--description {
     font-size: 1.5em !important;
+    text-align: center;
+    color: #ffffff !important;
 }
 
 /* ketentuan */
@@ -145,4 +149,160 @@ body{
 /* footer-image */
 .footer-image {
     max-width: 200px !important;
+}
+
+/* timeline */
+.timeline {
+    background-color: white !important;
+}
+
+.timeline {
+    background-color: #1d1d1d;
+    min-height: 100vh;
+    clear: both;
+}
+.entries {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.entries::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(0, 16, 46);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.entry {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.entry::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #151f53;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.title__timeline {
+    margin-bottom: 50px;
+}
+.timeline__box {
+    margin-top: 50px;
+}
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+/* Add arrows to the left container (pointing right) .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+*/
+/* Add arrows to the right container (pointing left) .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+*/
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+.entry__body {
+    padding: 20px 30px;
+    background-color: rgb(208, 227, 255);
+    position: relative;
+    border-radius: 6px;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 850px) {
+   /* Place the timelime to the left */
+    .entries::after {
+        left: 28px;
+   }
+   /* Full-width containers */
+    .entry {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+   }
+   /* Make sure that all arrows are pointing leftwards */
+    .entry::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+   }
+   /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 15px;
+   }
+   /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+   }
+}
+
+li {
+    margin: 10px auto 5px 50px;
+}
+
+.ketentuan-title {
+    margin-top: 20px;
+}
+
+.section-fa {
+    font-size: 30pt;
+    margin: 10px auto;
+}
+
+.title-container {
+    margin-bottom: 5px !important;
+}
+
+.ketentuan-title {
+    font-size: 1.5em;
+}
+
+.hadiah-column {
+    margin-top: 20px;
+}
+
+.hadiah {
+    color: white !important;
+}
+
+.fa-question-circle {
+    margin-bottom: 15px;
 }

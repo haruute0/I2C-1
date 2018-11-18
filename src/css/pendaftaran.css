@@ -26,14 +26,14 @@ label {
 
 .signup-button {
     width: 100px;
-    background-color: #245ec6;
+    background-color: #00487C;
     transition: 0.3s;
     color: white !important;
     margin: 20px auto auto;
 }
 
 .signup-button:hover {
-    background-color: #2b2b2b;
+    background-color: #2F4858;
     transition: 0.3s;
 }
 
@@ -68,14 +68,15 @@ label {
 
 /* back-button */
 .back-button {
-    background-color: #245ec6;
+    background-color: #00487C;
+    border: none;
     transition: 0.3s;
     color: white !important;
     z-index: 100;
 }
 
 .back-button:hover {
-    background-color: #2b2b2b;
+    background-color: #2F4858;
     transition: 0.3s;
 }
 
@@ -105,4 +106,14 @@ label {
 .hero-desc {
     font-size: 15pt;
     color: #232930;
+}
+
+/* Huh */
+
+body {
+    background: linear-gradient(180deg, #ffffff 0%,#c2e2ee 55%);
+}
+
+.foot {
+    margin-top: 40px;
 }

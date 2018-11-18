@@ -61,7 +61,7 @@
                 <div class="field">
                     <label class="label">Nama Kelompok</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Nama Kelompok">
+                        <input class="input" type="text" placeholder="Nama Kelompok" required>
                     </div>
                     <p>Apabila individu, tuliskan nama panggilan peserta</p>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="field">
                     <label class="label">Asal Sekolah</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Asal Sekolah">
+                        <input class="input" type="text" placeholder="Asal Sekolah" required>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@
                 <div class="field">
                     <label class="label">Alamat Sekolah</label>
                     <div class="control">
-                        <textarea class="textarea" type="textarea" placeholder="Alamat Sekolah"></textarea>
+                        <textarea class="textarea" type="textarea" placeholder="Alamat Sekolah" required></textarea>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                 <div class="field">
                     <label class="label">Nomor Telepon Sekolah</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Nomor Telepon Sekolah">
+                        <input class="input" type="text" placeholder="Nomor Telepon Sekolah" required>
                     </div>
                 </div>
 
@@ -211,21 +211,21 @@
                                 </label>
                             </div>
                             <div>
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    Alergi? Centang jika anda memiliki alergi.
-                                </label>
-                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" id="alergiKetua" onclick="alergiShowKetua()">
+                                Alergi? Centang jika anda memiliki alergi.
+                            </label>
                         </div>
+                    </div>
 
-                         <!-- Field Alergi -->
-                        <div class="field">
-                            <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
-                            <div class="control">
-                                <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
-                            </div>
+                    <!-- Field Alergi -->
+                    <div class="field" id="alergiShowKetua" style="display:none">
+                        <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
                         </div>
-                        
+                    </div> 
+                
                     </div>
                 </div>
 
@@ -272,14 +272,14 @@
                             </div>
                             <div>
                                 <label class="checkbox">
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="alergi1" onclick="alergiShow1()">
                                     Alergi? Centang jika anda memiliki alergi.
                                 </label>
                             </div>
                         </div>
 
                         <!-- Field Alergi -->
-                        <div class="field">
+                        <div class="field" id="alergiShow1" style="display:none">
                             <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
                             <div class="control">
                                 <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
@@ -330,21 +330,21 @@
                                     </label>
                                 </div>
                                 <div>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Alergi? Centang jika anda memiliki alergi.
-                                    </label>
-                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" id="alergi2" onclick="alergiShow2()">
+                                    Alergi? Centang jika anda memiliki alergi.
+                                </label>
                             </div>
-    
-                            <!-- Field Alergi -->
-                            <div class="field">
-                                <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
-                                </div>
-                            </div> 
                         </div>
+
+                        <!-- Field Alergi -->
+                        <div class="field" id="alergiShow2" style="display:none">
+                            <label class="label">Jika anda memiliki alergi, harap tulis di bawah ini!</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Contoh : Alergi makanan murah, micin, pedas">
+                            </div>
+                        </div> 
+                    </div>
                 </div>
 
             </div>
@@ -410,7 +410,54 @@
             </div>
 
         </div>
+        <div class="foot has-text-centered">
+            <p class="login--ptext">&copy; 2018 - <a class="foot-link" href="https://ifest-uajy.com">IFEST#7</a> Sie. Sistem Informasi</p>
+        </div>
 
     </section>
+
+    <script>
+        function alergiShowKetua()
+        {
+            var checkbox = document.getElementById("alergiKetua");
+            var show = document.getElementById("alergiShowKetua");
+
+            if (checkbox.checked == true)
+            {
+                show.style.display = "block";
+            }
+            else {
+                show.style.display = "none"
+            }
+        }
+
+        function alergiShow1()
+        {
+            var checkbox = document.getElementById("alergi1");
+            var show = document.getElementById("alergiShow1");
+
+            if (checkbox.checked == true)
+            {
+                show.style.display = "block";
+            }
+            else {
+                show.style.display = "none"
+            }
+        }
+
+        function alergiShow2()
+        {
+            var checkbox = document.getElementById("alergi2");
+            var show = document.getElementById("alergiShow2");
+
+            if (checkbox.checked == true)
+            {
+                show.style.display = "block";
+            }
+            else {
+                show.style.display = "none"
+            }
+        }
+    </script>
 
 </body>

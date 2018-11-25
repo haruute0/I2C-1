@@ -58,26 +58,41 @@ html, body {
    transition: 0.2s;
 }
 
-.button-bordered {
-   background-color: #222222 !important;
-   border-radius: 10px;
-   color: #f0f0f0 !important;
-   margin: 0px 5px;
-   transition: 0.2s;
-}
-
-.button-bordered:hover {
-   background-color: #68c2ff !important;
-   color: #222222 !important;
-   transition: 0.2s;
-}
+@media screen and (min-width: 851px) {
+    .button-bordered {
+        background-color: #222222 !important;
+        border-radius: 10px;
+        color: #f0f0f0 !important;
+        margin: 0px 5px;
+        transition: 0.2s;
+     }
+     
+     .button-bordered:hover {
+        background-color: #68c2ff !important;
+        color: #222222 !important;
+        transition: 0.2s;
+     }
+ }
 
 /* Responsive rules */
 @media screen and (max-width: 850px) {
-   .navbar {
-       padding: 0;
-  }
-}
+    .navbar {
+        padding: 0;
+        background-color: inherit;
+   }
+   .is-active {
+       background-color: inherit;
+     }
+     .button-bordered
+     {
+         background-color: inherit;
+     }
+     .about
+     {
+         clear: both;
+         height: 150vh;
+     }
+ }
 
 body{
     background-color: rgb(22, 22, 22) !important;
@@ -159,7 +174,7 @@ body{
 /* ketentuan */
 .ketentuan {
     background-color: whitesmoke;
-    margin-top: -150px;
+    margin-top: -120px;
 }
 
 /* Banner SignUp */
@@ -214,6 +229,7 @@ body{
     font-size: 1.2em;
 }
 .footer__text {
+    padding-top: 50px;
     font-size: 1em;
 }
 .footer {
@@ -278,41 +294,12 @@ body{
 .timeline__box {
     margin-top: 50px;
 }
-/* Place the container to the left */
 .left {
     left: 0;
 }
-/* Place the container to the right */
 .right {
     left: 50%;
 }
-/* Add arrows to the left container (pointing right) .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-*/
-/* Add arrows to the right container (pointing left) .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-*/
-/* Fix the circle for containers on the right side */
 .right::after {
     left: -12px;
 }
@@ -322,6 +309,7 @@ body{
     position: relative;
     border-radius: 6px;
 }
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 850px) {
    /* Place the timelime to the left */

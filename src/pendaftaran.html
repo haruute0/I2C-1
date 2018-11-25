@@ -50,7 +50,7 @@
         <div class="container">
 
             <div class="form-pendaftaran">
-            <h3 class="subtitle is-3">Informasi Kelompok</h3>
+            <h3 class="judul-sub">Informasi Kelompok</h3>
             <p>Silahkan isi form dibawah ini dengan lengkap dan benar.</p>
             
             <form name="registrasi-kelompok" method="POST">
@@ -63,7 +63,7 @@
                     <div class="control">
                         <input class="input" type="text" placeholder="Nama Kelompok" required>
                     </div>
-                    <p>Apabila individu, tuliskan nama panggilan peserta</p>
+                    <p class="sub-info">Apabila individu, tuliskan nama panggilan peserta</p>
                 </div>
 
                 <!-- Asal Sekolah -->
@@ -92,7 +92,8 @@
 
             </div>
 
-            <h3 class="subtitle is-3">Informasi Pembimbing</h3>
+            <h3 class="judul-sub">Informasi Pembimbing</h3>
+            <p>Apabila individu, tuliskan nama panggilan peserta</p>
 
             <div class="box">
 
@@ -112,26 +113,19 @@
                 </div>
             </div>
 
-                <!-- ID Line -->
-            <div class="field">
-                <label class="label">ID Line Pembimbing</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="ID Line Pembimbing">
-                </div>
-            </div>
-
-                <!-- Email -->
+            <!-- Email -->
             <div class="field">
                 <label class="label">Email Pembimbing</label>
                 <div class="control">
                     <input class="input" type="text" placeholder="Email Pembimbing">
-                    <p>Email digunakan untuk keperluan penyampaian informasi seputar I2C 2019.</p>
+                    <p class="sub-info">Email digunakan untuk keperluan penyampaian informasi seputar I2C 2019.</p>
                 </div>
             </div>
 
             </div>
 
-            <h3 class="subtitle is-3">Informasi Peserta</h3>
+            <h3 class="judul-sub">Informasi Peserta</h3>
+            <p>Apabila individu, tuliskan nama panggilan peserta</p>
 
             <div class="informasi-peserta">
 
@@ -150,9 +144,9 @@
 
                          <!-- Nomor Induk -->
                         <div class="field">
-                            <label class="label">Nomor Induk Sekolah</label>
+                            <label class="label">Nomor Induk Sekolah Nasional (NISN)</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Nomor Induk Sekolah">
+                                <input class="input" type="text" placeholder="Nomor Induk Sekolah Nasional (NISN)">
                             </div>
                         </div>
 
@@ -189,7 +183,7 @@
                             <label class="label">Email Ketua Kelompok</label>
                             <div class="control">
                                 <input class="input" type="text" placeholder="Email Ketua Kelompok">
-                                <p>Email digunakan untuk login ke area peserta dan menerima informasi seputar I2C 2019.</p>
+                                <p class="sub-info">Email digunakan untuk login ke area peserta dan menerima informasi seputar I2C 2019.</p>
                             </div>
                         </div>
 
@@ -199,7 +193,11 @@
                                 <div class="control">
                                     <input class="input" type="password">
                                 </div>
-                                <p>Password digunakan untuk login ke area peserta. Harap ingat password anda! Lupa password bukan tanggung jawab panitia.</p>
+                                <label class="label">Konfirmasi Password</label>
+                                <div class="control">
+                                    <input class="input" type="password">
+                                </div>
+                                <p class="sub-info">Password digunakan untuk login ke area peserta. Harap ingat password anda! Lupa password bukan tanggung jawab panitia.</p>
                         </div>
 
                         <!-- Alegi/Vege -->
@@ -244,9 +242,9 @@
 
                         <!-- Nomor Induk -->
                         <div class="field">
-                            <label class="label">Nomor Induk Sekolah</label>
+                            <label class="label">Nomor Induk Sekolah Nasional (NISN)</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Nomor Induk Sekolah">
+                                <input class="input" type="text" placeholder="Nomor Induk Sekolah Nasional (NISN)">
                             </div>
                         </div>
 
@@ -303,9 +301,9 @@
     
                             <!-- Nomor Induk -->
                             <div class="field">
-                                <label class="label">Nomor Induk Sekolah</label>
+                                <label class="label">Nomor Induk Sekolah Nasional (NISN)</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Nomor Induk Sekolah">
+                                    <input class="input" type="text" placeholder="Nomor Induk Sekolah Nasional (NISN)">
                                 </div>
                             </div>
 
@@ -349,34 +347,6 @@
 
             </div>
 
-            <div class="lampiran-section">
-
-                <div class="box">
-                    <p><strong id="ketentuan">Uploader lampiran:</strong></p>
-                    <ul>
-                        <li><p><i class="fas fa-check-circle"></i> Scan Surat Persetujuan dari Sekolah</p></li>
-                        <li><p><i class="fas fa-check-circle"></i> Scan Kartu Pelajar Masing-Masing Pendaftar</p></li>
-                    </ul>
-                    <div class="file has-name uploader">
-                        <label class="file-label">
-                            <input class="file-input" id="file" type="file" name="upload-proposal" required>
-                            <span class="file-cta">
-                            <span class="file-icon">
-                                <i class="fas fa-upload"></i>
-                            </span>
-                            <span class="file-label">
-                                Choose a file…
-                            </span>
-                            </span>
-                            <span class="file-name" id="filename">
-                                No File Chosen
-                            </span>
-                        </label>
-                    </div>
-                    <p><center>Ukuran maksimum: 20 MB, semua file dikirim dalam 1 archive berformat zip</center></p>
-                </div>
-            </div>
-
             <div class="has-text-centered">
                 <p><strong class="perhatian">Perhatian!</strong></p>
                 <p>Pastikan data yang diinput sudah benar.</p>
@@ -394,12 +364,12 @@
                     <div>
                         <label class="checkbox">
                             <input type="checkbox" required>
-                            Saya telah membaca ketentuan I2C 2019.
+                            Saya telah membaca <a href="/#ketentuan" target="_blank" rel="noopener noreferrer">ketentuan I2C 2019</a>
                         </label>
                     </div>
 
                     <!-- Submit Button -->
-                    <div>
+                    <div class="has-text-centered">
                         <input class="button signup-button" type="submit">
                     </div>
                 </div>

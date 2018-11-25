@@ -4,7 +4,11 @@
     SI IFEST#7 2019
 */
 
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans|Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Gloria+Hallelujah|Open+Sans|Oswald:700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 /* Title */
 .signup-title{
@@ -99,6 +103,11 @@ label {
     font-family: 'Oswald', sans-serif;
 }
 
+.judul-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+
 .hero-logo-img {
     max-height: 75px;
 }
@@ -116,4 +125,14 @@ body {
 
 .foot {
     margin-top: 40px;
+}
+
+/* sub-info */
+.sub-info{
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+body {
+    background: url('/images/clouds.png') no-repeat left bottom;
 }

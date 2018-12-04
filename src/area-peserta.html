@@ -3,3 +3,172 @@
     Halaman Area Peserta I2C 2019
     SI IFEST#7 2019
 -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Area Peserta | I2C 2019</title>
+    <meta name="description" content="Area peserta kompetisi ide aplikasi I2C 2019 untuk siswa/i SMA seluruh Indonesia.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/area-peserta.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="box-uploader">
+
+                    <div class="title-area">
+                            <h1 class="title">Area Peserta</h1>
+                            <p>Selamat datang di area peserta, <strong>((email_ketua@gmail.com))</strong></p>
+                        </div>
+
+                        <h3 class="subtitle is-3 padding0">Uploader 1</h3>
+                        <h5 class="subtitle is-5">Scan/Foto Surat Persetujuan dan Kartu Pelajar</h5>
+                <div class="box">
+                        <p>Silahkan mengupload scan/foto surat persetujuan/tugas dari sekolah dan kartu pelajar setiap peserta.</p>
+    
+                        <form name="upload-proposal" method="POST" netlify>
+                            <div class="file has-name">
+                                <label class="file-label">
+                                    <input class="file-input" id="file" type="file" name="upload-proposal" required>
+                                    <span class="file-cta">
+                                    <span class="file-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </span>
+                                    <span class="file-label">
+                                        Choose a file…
+                                    </span>
+                                    </span>
+                                    <span class="file-name" id="filename">
+                                        No File Chosen
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <p>Format penamaan: <code>NamaKelompok-NamaFile.pdf</code></p>
+                                <p>Maximum size 25 MB. File type is pdf.</p>
+                                <p style="color: red">Plis jangan dicoba beneran. Quota netlify saya nanti habis.</p>
+                            </div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    Saya telah membaca <a href="/#ketentuan">ketentuan I2C 2019.</a>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="button" type="submit">
+                            </div>
+                        </form>
+                    </div>    
+                    <div class="box">
+                        <h2 class="subtitle is-2">Upload Bukti Pembayaran</h2>
+                        <p>Silahkan mengunggah bukti pembayaran untuk registrasi tim sebelum <strong>((PAYMENT_DEADLINE))</strong></p>
+                        <form name="upload-bukti-pembayaran" method="POST" netlify>
+                            <div class="file has-name">
+                                <label class="file-label">
+                                    <input class="file-input" id="file" type="file" name="foto-bukti-pembayaran" required>
+                                    <span class="file-cta">
+                                    <span class="file-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </span>
+                                    <span class="file-label">
+                                        Choose a file…
+                                    </span>
+                                    </span>
+                                    <span class="file-name" id="filename">
+                                        No File Chosen
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <p>Maximum size 10 MB. File type is jpg/jpeg.</p>
+                                <p style="color: red">Plis jangan dicoba, pake 10 MB beneran. Quota netlify saya nanti habis.</p>
+                            </div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    Saya telah membaca <a href="/#ketentuan">ketentuan I2C 2019.</a>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="button" type="submit">
+    
+                            </div>
+    
+                        </form>
+                    </div>
+                    <div class="box">
+                        <h2 class="subtitle is-2">Upload Proposal</h2>
+                        <p>Silahkan mengunggah proposal lomba tim sebelum <strong>((PROPOSAL_DEADLINE))</strong></p>
+    
+                        <form name="upload-proposal" method="POST" netlify>
+                            <div class="file has-name">
+                                <label class="file-label">
+                                    <input class="file-input" id="file" type="file" name="upload-proposal" required>
+                                    <span class="file-cta">
+                                    <span class="file-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </span>
+                                    <span class="file-label">
+                                        Choose a file…
+                                    </span>
+                                    </span>
+                                    <span class="file-name" id="filename">
+                                        No File Chosen
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <p>Format penamaan: <code>NamaKelompok-NamaFile.pdf</code></p>
+                                <p>Maximum size 25 MB. File type is pdf.</p>
+                                <p style="color: red">Plis jangan dicoba beneran. Quota netlify saya nanti habis.</p>
+                            </div>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    Saya telah membaca <a href="/#ketentuan">ketentuan I2C 2019.</a>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="button" type="submit">
+                            </div>
+                        </form>
+                    </div>    
+            </div>
+    </section>
+    <script>
+        var file = document.getElementById("file");
+        file.onchange = function(){
+            if(file.files.length > 0)
+            {
+                document.getElementById('filename').innerHTML = file.files[0].name;
+            }
+        };
+    </script>
+<footer class="footer" style="background-color: #000;">
+        <div class="content has-text-centered">
+            <div class="footer__text">
+                <p class="login--ptext">&copy; 2018 - <a class="foot-link" href="https://ifest-uajy.com">IFEST#7</a> Sie. Sistem Informasi</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

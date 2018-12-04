@@ -3,3 +3,16 @@
     Stylesheet file untuk halaman area peserta
     SI IFEST#7 2019
 */
+
+.box-uploader{
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+
+.title-area{
+    margin: 70px auto; 
+}
+
+.padding0{
+    margin-bottom: 5px !important;
+}

@@ -16,3 +16,24 @@
 .padding0{
     margin-bottom: 5px !important;
 }
+
+.nama-uploader{
+    margin-left: 30px;
+}
+
+.kirim {
+    margin: 20px auto auto;
+    width: 100px;
+    background-color: #245ec6;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.kirim:hover{
+    background-color: #2b2b2b;
+    transition: 0.3s;
+}
+
+.file{
+    margin: 20px auto;
+}
